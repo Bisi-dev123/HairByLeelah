@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair By Leelah | Luxury Hair Braiding & Portfolio | Scarborough, ON</title>
+  <meta name="description" content="Hair By Leelah - Scarborough's premier hair braiding studio. Specializing in tension-free Knotless Braids, Box Braids, Cornrows, Wig Installations, and Protective Styling. Book online today with instant deposit confirmation.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <div class="container announcement-content">
+      <span><i class="fa-solid fa-sparkles"></i> Welcoming new clients in Scarborough! Appointments open for this month.</span>
+      <div class="announcement-right">
+        <a href="tel:4165550192"><i class="fa-solid fa-phone"></i> (416) 555-0192</a>
+        <span class="divider">|</span>
+        <button class="stylist-portal-trigger" id="stylistPortalBtn" title="Stylist Portal (Settings & Bookings)">
+          <i class="fa-solid fa-sliders"></i> Stylist Portal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo">
+        <span class="logo-monogram">HL</span>
+        <div class="logo-text">
+          <span class="brand-name">Hair By Leelah</span>
+          <span class="brand-tagline">Braids &amp; Luxury Hair Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services &amp; Pricing</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#about" class="nav-link">About Leelah</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <button class="btn btn-primary btn-book-trigger" onclick="openBookingModal()">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Book Appointment</span>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <span class="logo-monogram">HL</span>
+        <div class="logo-text">
+          <span class="brand-name">Hair By Leelah</span>
+          <span class="brand-tagline">Scarborough, ON</span>
+        </div>
+      </div>
+      <button class="close-mobile-nav" id="closeMobileNavBtn" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#services" class="mobile-link">Services &amp; Pricing</a></li>
+      <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+      <li><a href="#about" class="mobile-link">About Leelah</a></li>
+      <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+      <li><a href="#contact" class="mobile-link">Contact &amp; Location</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <button class="btn btn-primary btn-block btn-book-trigger" onclick="openBookingModal()">
+        <i class="fa-regular fa-calendar-check"></i> Book Appointment Now
+      </button>
+      <button class="btn btn-outline btn-block stylist-portal-trigger" id="mobileStylistPortalBtn">
+        <i class="fa-solid fa-sliders"></i> Stylist Settings &amp; Schedule
+      </button>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Sticky Mobile Quick-Book Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bar-info">
+      <span class="bar-title">Hair By Leelah</span>
+      <span class="bar-sub">30% deposit to secure slot</span>
+    </div>
+    <button class="btn btn-primary btn-sm btn-book-trigger" onclick="openBookingModal()">
+      <i class="fa-regular fa-calendar-plus"></i> Book Now
+    </button>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pulse-dot"></span> Certified Protective Style Specialist &bull; Scarborough, ON
+          </div>
+          <h1 class="hero-title">
+            Flawless Braids, Gentle Care &amp; <span class="text-serif italic-accent">Unmatched Elegance</span>
+          </h1>
+          <p class="hero-description">
+            Experience painless, precision braiding tailored to your lifestyle. Specializing in tension-free Knotless Braids, bespoke Box Braids, Fulani Cornrows, and flawless Wig Installations.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-lg btn-book-trigger" onclick="openBookingModal()">
+              <i class="fa-regular fa-calendar-check"></i> Book Your Appointment
+            </button>
+            <a href="#portfolio" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-eye"></i> View Portfolio
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-number">4.9<i class="fa-solid fa-star star-gold"></i></span>
+              <span class="highlight-label">180+ 5-Star Reviews</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-number">7+</span>
+              <span class="highlight-label">Years of Mastery</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-number">100%</span>
+              <span class="highlight-label">Scalp-Safe &amp; Painless</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80" alt="Beautiful client with long knotless braids" class="hero-main-img">
+            <div class="floating-badge badge-top-right">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <strong>Top Rated</strong>
+                <span>Braider in GTA</span>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <div class="avatar-stack">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Happy client">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Client 2">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Client 3">
+              </div>
+              <div>
+                <strong>Over 1,200+</strong>
+                <span>Heads Styled with Love</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK HIGHLIGHTS / PROMISES STRIP -->
+    <section class="promises-strip">
+      <div class="container promises-grid">
+        <div class="promise-card">
+          <div class="promise-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+          <div class="promise-text">
+            <h3>Zero Scalp Tension</h3>
+            <p>Gentle on edges and follicles. Painless installation guaranteed.</p>
+          </div>
+        </div>
+        <div class="promise-card">
+          <div class="promise-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <div class="promise-text">
+            <h3>Clean Sanitized Space</h3>
+            <p>Sterilized tools, fresh towels, and a calming boutique atmosphere.</p>
+          </div>
+        </div>
+        <div class="promise-card">
+          <div class="promise-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <div class="promise-text">
+            <h3>Complimentary Comfort</h3>
+            <p>High-speed Wi-Fi, Netflix, herbal teas, coffee &amp; refreshments.</p>
+          </div>
+        </div>
+        <div class="promise-card">
+          <div class="promise-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <div class="promise-text">
+            <h3>Secure Deposit Booking</h3>
+            <p>Transparent 30% deposit with instant verification &amp; email receipt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES & PRICING SECTION -->
+    <section class="section-padding services-section" id="services">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="sub-title">Signature Offerings</span>
+          <h2 class="section-title">Services &amp; Transparent Pricing</h2>
+          <p class="section-desc">
+            Each hairstyle is crafted with meticulous attention to detail. Starting prices shown below. Customize hair length, braid size, and add-ons during the booking process.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="services-filter-bar">
+          <button class="service-tab-btn active" data-category="all">All Styles</button>
+          <button class="service-tab-btn" data-category="knotless">Knotless Braids</button>
+          <button class="service-tab-btn" data-category="box-braids">Box Braids</button>
+          <button class="service-tab-btn" data-category="cornrows">Cornrows</button>
+          <button class="service-tab-btn" data-category="wigs">Wigs &amp; Weaves</button>
+          <button class="service-tab-btn" data-category="revamp">Care &amp; Revamp</button>
+        </div>
+
+        <!-- Services Grid Container -->
+        <div class="services-grid" id="servicesGrid">
+          <!-- Dynamically populated by JS from data catalog -->
+        </div>
+
+        <!-- Custom Pricing Factor Explainer -->
+        <div class="pricing-factors-card">
+          <div class="factors-header">
+            <i class="fa-solid fa-circle-info"></i>
+            <div>
+              <h3>How Our Custom Pricing Works</h3>
+              <p>Prices vary depending on hair length, braid sizing, and styling complexity. Choose your options during online booking for an exact live calculation.</p>
+            </div>
+          </div>
+          <div class="factors-grid">
+            <div class="factor-item">
+              <span class="factor-badge"><i class="fa-solid fa-arrows-up-down"></i> Length</span>
+              <p>Mid-back (Standard), Waist-length (+$30), Butt-length (+$50), Thigh/Knee-length (+$80)</p>
+            </div>
+            <div class="factor-item">
+              <span class="factor-badge"><i class="fa-solid fa-circle-dot"></i> Size</span>
+              <p>Jumbo (-$20), Medium (Standard), Smedium (+$25), Small (+$45), Extra Small (+$75)</p>
+            </div>
+            <div class="factor-item">
+              <span class="factor-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Add-ons</span>
+              <p>Bohemian/Goddess curls (+$45), Wash &amp; Blowdry (+$25), Hair provided by stylist (+$25)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO / GALLERY SECTION -->
+    <section class="section-padding portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="sub-title">Client Transformations</span>
+          <h2 class="section-title">Gallery of Work</h2>
+          <p class="section-desc">
+            Browse authentic pictures of Leelah’s recent hair artistry. Click any photo to inspect partings, neatness, and finish.
+          </p>
+        </div>
+
+        <!-- Portfolio Category Filters -->
+        <div class="portfolio-filter-bar">
+          <button class="portfolio-filter-btn active" data-filter="all">All Styles</button>
+          <button class="portfolio-filter-btn" data-filter="knotless">Knotless Braids</button>
+          <button class="portfolio-filter-btn" data-filter="box">Box Braids</button>
+          <button class="portfolio-filter-btn" data-filter="cornrow">Cornrows &amp; Fulani</button>
+          <button class="portfolio-filter-btn" data-filter="wig">Wigs &amp; Installs</button>
+          <button class="portfolio-filter-btn" data-filter="twists">Twists &amp; Locs</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Dynamically populated or rendered with high quality curated hair images -->
+        </div>
+
+        <div class="portfolio-cta text-center">
+          <p>See a style you adore?</p>
+          <button class="btn btn-primary btn-lg" onclick="openBookingModal()">
+            <i class="fa-regular fa-calendar-check"></i> Book This Look
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section-padding about-section" id="about">
+      <div class="container about-container">
+        <div class="about-media">
+          <div class="about-image-card">
+            <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=800&q=80" alt="Leelah - Lead Hairstylist and Braider" class="about-portrait">
+            <div class="about-experience-stamp">
+              <span class="exp-years">7+</span>
+              <span class="exp-text">Years Crafting Scalp-Safe Styles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="sub-title">Meet Your Stylist</span>
+          <h2 class="section-title">Hi, I'm Leelah.</h2>
+          <p class="lead-text">
+            Welcome to Hair By Leelah! I am a passionate hair artist and certified protective stylist serving Scarborough and the Greater Toronto Area.
+          </p>
+          <p>
+            My styling philosophy revolves around healthy hair longevity. Too often, clients associate braiding with tight tension and scalp headaches. My mission is the opposite: creating breathtaking, crisp, long-lasting styles with zero painful pulling and complete edge preservation.
+          </p>
+          <p>
+            Whether you want waist-length bohemian knotless braids, sleek cornrows, or a flawless lace wig melt for a special event, you can sit back in my private salon studio, enjoy your favorite show, and leave feeling confident and radiant.
+          </p>
+
+          <div class="about-feature-list">
+            <div class="about-feat">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Certified in Scalp Anatomy &amp; Tension Control</span>
+            </div>
+            <div class="about-feat">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>High-Grade Hypoallergenic Pre-Stretched Hair</span>
+            </div>
+            <div class="about-feat">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Private, Relaxing Salon Suite in Scarborough</span>
+            </div>
+            <div class="about-feat">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Full Aftercare &amp; Edge Maintenance Guidance</span>
+            </div>
+          </div>
+
+          <div class="about-signature-block">
+            <div class="signature-font">Leelah M.</div>
+            <span class="signature-title">Founder &amp; Master Stylist, Hair By Leelah</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS & TESTIMONIALS SECTION -->
+    <section class="section-padding reviews-section" id="reviews">
+      <div class="container">
+        <div class="reviews-header-wrap">
+          <div>
+            <span class="sub-title">Client Love &amp; Praise</span>
+            <h2 class="section-title">What Clients Are Saying</h2>
+          </div>
+          <div class="reviews-actions">
+            <button class="btn btn-outline" onclick="openReviewModal()">
+              <i class="fa-solid fa-pen-nib"></i> Write a Review
+            </button>
+            <a href="#contact" class="google-badge-link" target="_blank" rel="noopener">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-icon-svg">
+              <div class="google-rating-text">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span>4.9 on Google Reviews</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Reviews Carousel / Grid -->
+        <div class="reviews-grid" id="reviewsGrid">
+          <!-- Loaded dynamically from script.js and stored in localStorage -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & LOCATION SECTION -->
+    <section class="section-padding contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="sub-title">Get in Touch</span>
+          <h2 class="section-title">Visit Our Scarborough Studio</h2>
+          <p class="section-desc">
+            Conveniently located in Scarborough with ample free visitor parking and transit access.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Details & Hours -->
+          <div class="contact-card">
+            <h3>Studio Information</h3>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="c-text">
+                  <strong>Studio Address</strong>
+                  <p>2250 Markham Road, Suite 204<br>Scarborough, ON M1B 2W4, Canada</p>
+                  <small class="text-muted">(Near Markham Rd &amp; Sheppard Ave E &bull; Free Parking)</small>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="c-text">
+                  <strong>Phone / Text</strong>
+                  <p><a href="tel:4165550192">(416) 555-0192</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="c-text">
+                  <strong>Email Inquiries</strong>
+                  <p><a href="mailto:bookings@hairbyleelah.ca">bookings@hairbyleelah.ca</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="c-text">
+                  <strong>Studio Working Hours</strong>
+                  <ul class="hours-list" id="contactHoursList">
+                    <li><span>Tuesday &ndash; Friday</span> <span>9:00 AM &ndash; 7:00 PM</span></li>
+                    <li><span>Saturday</span> <span>8:30 AM &ndash; 6:30 PM</span></li>
+                    <li><span>Sunday</span> <span>10:00 AM &ndash; 4:00 PM</span></li>
+                    <li><span>Monday</span> <span class="closed-tag">Closed (Cleaning / Rest)</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-bar">
+              <strong>Follow Our Journey:</strong>
+              <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://wa.me/14165550192" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Map & Message Form -->
+          <div class="contact-map-form-card">
+            <!-- Map Embed -->
+            <div class="map-embed-wrapper">
+              <iframe
+                title="Hair By Leelah Scarborough Studio Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46077.58579124403!2d-79.27855353147854!3d43.79979262270911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d1aa4e7bf537%3A0x6b63fc4861461ff3!2sScarborough%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
+                width="100%"
+                height="220"
+                style="border:0; border-radius: 12px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <a href="https://maps.google.com/?q=Scarborough,+Toronto,+ON" target="_blank" rel="noopener" class="map-direct-link">
+                <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+              </a>
+            </div>
+
+            <!-- Quick Inquiry Form -->
+            <form id="contactForm" class="quick-contact-form" onsubmit="handleContactSubmit(event)">
+              <h4>Quick Consultation Inquiry</h4>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="cName">Your Name</label>
+                  <input type="text" id="cName" placeholder="e.g. Amara Clarke" required>
+                </div>
+                <div class="form-group">
+                  <label for="cPhone">Phone or Email</label>
+                  <input type="text" id="cPhone" placeholder="e.g. (416) 000-0000" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cMessage">Question or Styling Goal</label>
+                <textarea id="cMessage" rows="2" placeholder="Tell Leelah about your hair goals or ask a question..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-secondary btn-block">
+                <i class="fa-regular fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-col footer-brand-col">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="logo-monogram">HL</span>
+          <div class="logo-text">
+            <span class="brand-name">Hair By Leelah</span>
+            <span class="brand-tagline">Scarborough, ON</span>
+          </div>
+        </a>
+        <p class="footer-bio">
+          Premium, tension-free hair braiding and styling studio in Scarborough, Ontario. Providing healthy scalp care, custom lengths, and exquisite protective styling.
+        </p>
+        <p class="salon-policy-quick-link">
+          <button class="link-btn" onclick="openPolicyModal()"><i class="fa-solid fa-file-contract"></i> View Salon Policies &amp; Terms</button>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Popular Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services" onclick="selectServiceCategory('knotless')">Knotless Braids</a></li>
+          <li><a href="#services" onclick="selectServiceCategory('box-braids')">Classic Box Braids</a></li>
+          <li><a href="#services" onclick="selectServiceCategory('cornrows')">Fulani &amp; Stitch Cornrows</a></li>
+          <li><a href="#services" onclick="selectServiceCategory('wigs')">Lace Wig Install &amp; Melt</a></li>
+          <li><a href="#services" onclick="selectServiceCategory('revamp')">Wig Revamp &amp; Deep Treatment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Studio Details</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> 2250 Markham Rd, Suite 204, Scarborough, ON</li>
+          <li><i class="fa-solid fa-phone"></i> (416) 555-0192</li>
+          <li><i class="fa-solid fa-envelope"></i> bookings@hairbyleelah.ca</li>
+          <li><i class="fa-solid fa-shield-check"></i> Licensed &amp; Insured Stylist</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stylist Administration</h4>
+        <p class="text-sm">Stylist can manage schedules, block personal days, buffer time, and view client bookings without a server:</p>
+        <button class="btn btn-outline btn-block stylist-portal-trigger" onclick="openStylistPortal()">
+          <i class="fa-solid fa-sliders"></i> Open Stylist Portal
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear">2026</span> Hair By Leelah. All rights reserved. Made for Scarborough, ON.</p>
+        <div class="footer-bottom-links">
+          <button class="link-btn" onclick="openPolicyModal()">Deposit Policy</button>
+          <span>&bull;</span>
+          <button class="link-btn" onclick="openPolicyModal()">Cancellation Notice</button>
+          <span>&bull;</span>
+          <button class="link-btn" onclick="openStylistPortal()">Stylist Portal</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- MODAL 1: FULL ONLINE APPOINTMENT BOOKING WIZARD (7 STEPS) -->
+  <!-- ================================================================= -->
+  <div class="modal-backdrop" id="bookingModal" aria-hidden="true" role="dialog" aria-labelledby="bookingModalTitle">
+    <div class="booking-wizard-modal">
+      
+      <!-- Modal Header -->
+      <div class="wizard-header">
+        <div class="wizard-header-title">
+          <span class="wizard-step-tag" id="wizardStepTag">Step 1 of 7</span>
+          <h2 id="bookingModalTitle">Book Your Appointment</h2>
+        </div>
+        <button class="modal-close-btn" onclick="closeBookingModal()" aria-label="Close booking modal">&times;</button>
+      </div>
+
+      <!-- Step Indicator Bar -->
+      <div class="wizard-progress-bar">
+        <div class="progress-step active" data-step="1">
+          <div class="step-num">1</div>
+          <span class="step-label">Client Info</span>
+        </div>
+        <div class="progress-step" data-step="2">
+          <div class="step-num">2</div>
+          <span class="step-label">Service</span>
+        </div>
+        <div class="progress-step" data-step="3">
+          <div class="step-num">3</div>
+          <span class="step-label">Preferences</span>
+        </div>
+        <div class="progress-step" data-step="4">
+          <div class="step-num">4</div>
+          <span class="step-label">Date &amp; Time</span>
+        </div>
+        <div class="progress-step" data-step="5">
+          <div class="step-num">5</div>
+          <span class="step-label">Policies</span>
+        </div>
+        <div class="progress-step" data-step="6">
+          <div class="step-num">6</div>
+          <span class="step-label">Deposit</span>
+        </div>
+        <div class="progress-step" data-step="7">
+          <div class="step-num">7</div>
+          <span class="step-label">Confirmed</span>
+        </div>
+      </div>
+
+      <!-- Live Summary Bar (Shows selected style, total price, deposit) -->
+      <div class="wizard-live-summary" id="wizardLiveSummary">
+        <div class="summary-style-preview">
+          <span class="preview-label">Selected Style:</span>
+          <strong id="liveSummaryStyle">None selected yet</strong>
+        </div>
+        <div class="summary-price-pills">
+          <span class="price-pill">Total: <strong id="liveSummaryTotal">$0</strong></span>
+          <span class="price-pill deposit-pill">30% Deposit: <strong id="liveSummaryDeposit">$0</strong></span>
+          <span class="price-pill balance-pill">Balance Due: <strong id="liveSummaryBalance">$0</strong></span>
+        </div>
+      </div>
+
+      <!-- Wizard Body: Step Panels -->
+      <div class="wizard-body">
+
+        <!-- ============================================== -->
+        <!-- STEP 1: CLIENT INFORMATION -->
+        <!-- ============================================== -->
+        <div class="wizard-step-panel active" id="stepPanel1">
+          <div class="step-intro">
+            <h3>Step 1: Your Contact Information</h3>
+            <p>Please enter your contact details so Leelah can confirm your appointment and send reminder notifications.</p>
+          </div>
+
+          <form id="step1Form" class="form-grid" onsubmit="event.preventDefault(); nextStep();">
+            <div class="form-group full-width">
+              <label for="clientFullName">Full Name <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="clientFullName" placeholder="e.g. Maya Robinson" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clientEmail">Email Address <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="clientEmail" placeholder="maya.robinson@example.com" required>
+              </div>
+              <small class="field-hint">Your booking receipt &amp; calendar invite will be emailed here.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="clientPhone">Phone Number <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" id="clientPhone" placeholder="(416) 555-0188" required>
+              </div>
+              <small class="field-hint">For appointment SMS updates and location pin.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="clientPreferredContact">Preferred Contact Method <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-comment-dots"></i>
+                <select id="clientPreferredContact" required>
+                  <option value="SMS">SMS Text Message</option>
+                  <option value="WhatsApp">WhatsApp</option>
+                  <option value="Email">Email</option>
+                  <option value="Phone Call">Phone Call</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Client Status <span class="required">*</span></label>
+              <div class="radio-card-group">
+                <label class="radio-card">
+                  <input type="radio" name="clientStatus" value="First-Time Client" checked>
+                  <div class="radio-card-content">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <div>
+                      <strong>First-Time Client</strong>
+                      <span>Includes free hair &amp; scalp consultation</span>
+                    </div>
+                  </div>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="clientStatus" value="Returning Client">
+                  <div class="radio-card-content">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                      <strong>Returning Client</strong>
+                      <span>Welcome back to Leelah’s chair!</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- STEP 2: CHOOSE A HAIR SERVICE & CUSTOMIZATION -->
+        <!-- ============================================== -->
+        <div class="wizard-step-panel" id="stepPanel2">
+          <div class="step-intro">
+            <h3>Step 2: Choose a Hair Service &amp; Sizing</h3>
+            <p>Select your desired hairstyle and customize length, braid thickness, and add-ons. Price and duration recalculate instantly.</p>
+          </div>
+
+          <!-- Service Selection Cards -->
+          <div class="booking-services-picker" id="bookingServicesPicker">
+            <!-- Rendered by JS -->
+          </div>
+
+          <!-- Dynamic Customization Options (Shown once service is selected) -->
+          <div class="service-customization-box" id="serviceCustomizationBox">
+            <h4 class="custom-title"><i class="fa-solid fa-sliders"></i> Customize Length, Size &amp; Add-ons</h4>
+            
+            <div class="custom-row">
+              <div class="custom-field">
+                <label for="customLengthSelect"><strong>Hair Length</strong> (adjusts base duration &amp; price):</label>
+                <select id="customLengthSelect" onchange="calculateDynamicBookingPrice()">
+                  <option value="mid-back" data-price="0" data-time="0">Mid-Back Length (Included in Base Price)</option>
+                  <option value="waist" data-price="30" data-time="30">Waist Length (+$30, +30 mins)</option>
+                  <option value="butt" data-price="50" data-time="60">Butt / Tailbone Length (+$50, +60 mins)</option>
+                  <option value="knee" data-price="80" data-time="90">Thigh / Knee Length (+$80, +90 mins)</option>
+                </select>
+              </div>
+
+              <div class="custom-field">
+                <label for="customSizeSelect"><strong>Braid Size / Styling Complexity</strong>:</label>
+                <select id="customSizeSelect" onchange="calculateDynamicBookingPrice()">
+                  <option value="jumbo" data-price="-20" data-time="-45">Jumbo / Large (Saves 45 mins, -$20)</option>
+                  <option value="medium" data-price="0" data-time="0" selected>Medium / Classic (Standard)</option>
+                  <option value="smedium" data-price="25" data-time="45">Smedium (+$25, +45 mins)</option>
+                  <option value="small" data-price="45" data-time="90">Small Braids (+$45, +90 mins)</option>
+                  <option value="micro" data-price="75" data-time="120">Extra Small / Micro (+$75, +120 mins)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Optional Add-ons Checkboxes -->
+            <div class="addons-section">
+              <label class="addons-label"><strong>Optional Add-On Treatments &amp; Styling:</strong></label>
+              <div class="addons-checkbox-grid">
+                <label class="addon-checkbox-card">
+                  <input type="checkbox" class="addon-cb" value="Bohemian/Goddess Human Hair Curls" data-price="45" data-time="45" onchange="calculateDynamicBookingPrice()">
+                  <div class="addon-info">
+                    <span class="addon-name">Bohemian / Goddess Curls</span>
+                    <span class="addon-sub">100% human curl strands throughout (+ $45, +45m)</span>
+                  </div>
+                </label>
+
+                <label class="addon-checkbox-card">
+                  <input type="checkbox" class="addon-cb" value="Deep Scalp Wash & Blowdry" data-price="25" data-time="30" onchange="calculateDynamicBookingPrice()">
+                  <div class="addon-info">
+                    <span class="addon-name">Wash &amp; Blowdry Prep</span>
+                    <span class="addon-sub">Invigorating wash &amp; stretch (+ $25, +30m)</span>
+                  </div>
+                </label>
+
+                <label class="addon-checkbox-card">
+                  <input type="checkbox" class="addon-cb" value="Stylist Provides Hair Extensions" data-price="25" data-time="0" onchange="calculateDynamicBookingPrice()">
+                  <div class="addon-info">
+                    <span class="addon-name">Stylist Supplies Hair</span>
+                    <span class="addon-sub">Premium pre-stretched hypoallergenic packs (+ $25)</span>
+                  </div>
+                </label>
+
+                <label class="addon-checkbox-card">
+                  <input type="checkbox" class="addon-cb" value="Beads & Gold Cuffs Accessory Styling" data-price="15" data-time="15" onchange="calculateDynamicBookingPrice()">
+                  <div class="addon-info">
+                    <span class="addon-name">Beads &amp; Hair Jewelry</span>
+                    <span class="addon-sub">Gold cuffs, string wraps, or beads (+ $15, +15m)</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Total Price Calculation Display Box -->
+            <div class="calculated-price-banner">
+              <div class="banner-col">
+                <span>Calculated Service Total</span>
+                <strong class="banner-amount" id="bannerTotal">$180.00</strong>
+              </div>
+              <div class="banner-col">
+                <span>Required 30% Deposit</span>
+                <strong class="banner-amount deposit-val" id="bannerDeposit">$54.00</strong>
+              </div>
+              <div class="banner-col">
+                <span>Remaining Balance Due</span>
+                <strong class="banner-amount balance-val" id="bannerBalance">$126.00</strong>
+              </div>
+              <div class="banner-col">
+                <span>Estimated Duration</span>
+                <strong class="banner-amount time-val" id="bannerDuration">4 &ndash; 5 Hours</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- STEP 3: HAIR PREFERENCES & INSPIRATION -->
+        <!-- ============================================== -->
+        <div class="wizard-step-panel" id="stepPanel3">
+          <div class="step-intro">
+            <h3>Step 3: Hair Preferences &amp; Special Requirements</h3>
+            <p>Tell Leelah about your hair color, extensions, scalp sensitivities, and upload an inspiration photo.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="hairColorSelect">Preferred Hair Colour <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-palette"></i>
+                <select id="hairColorSelect">
+                  <option value="#1B - Natural Black" selected>#1B &ndash; Natural Black</option>
+                  <option value="#1 - Jet Black">#1 &ndash; Jet Black</option>
+                  <option value="#2 - Dark Chocolate Brown">#2 &ndash; Dark Chocolate Brown</option>
+                  <option value="#4 - Medium Warm Brown">#4 &ndash; Medium Warm Brown</option>
+                  <option value="#27 - Honey Blonde">#27 &ndash; Honey Blonde</option>
+                  <option value="#30 - Light Auburn / Copper">#30 &ndash; Light Auburn / Copper</option>
+                  <option value="#613 - Platinum Blonde">#613 &ndash; Platinum Blonde</option>
+                  <option value="#99J - Burgundy / Wine">#99J &ndash; Deep Burgundy / Wine</option>
+                  <option value="Ombre / Mixed Custom Blend">Ombre / Mixed Custom Blend</option>
+                  <option value="Natural Hair Only (No Extensions)">Natural Hair Only (No Extensions)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Hair Extension Supply <span class="required">*</span></label>
+              <div class="radio-card-group">
+                <label class="radio-card">
+                  <input type="radio" name="extensionSupply" value="Client Bringing Own Hair" checked>
+                  <div class="radio-card-content">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <div>
+                      <strong>I will bring my own hair extensions</strong>
+                      <span>(Pre-stretched X-pression or Spectra recommended)</span>
+                    </div>
+                  </div>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="extensionSupply" value="Stylist to Provide Hair">
+                  <div class="radio-card-content">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <div>
+                      <strong>Stylist to provide hair extensions</strong>
+                      <span>(Pre-stretched, sanitized hypoallergenic hair)</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Inspiration Image Upload -->
+            <div class="form-group full-width">
+              <label>Upload Inspiration Picture (Optional but recommended)</label>
+              <div class="upload-dropzone" id="uploadDropzone">
+                <input type="file" id="inspoFileInput" accept="image/*" onchange="handleInspoUpload(event)">
+                <div class="dropzone-inner" id="dropzoneContent">
+                  <i class="fa-solid fa-cloud-arrow-up dropzone-icon"></i>
+                  <strong>Click or drag &amp; drop an inspiration photo</strong>
+                  <span>Supports JPG, PNG, WEBP (Saved locally to your browser)</span>
+                </div>
+                <div class="inspo-preview-wrap" id="inspoPreviewWrap" style="display:none;">
+                  <img id="inspoImagePreview" src="" alt="Inspiration photo preview">
+                  <button type="button" class="btn-remove-inspo" onclick="removeInspoImage()" title="Remove photo">&times;</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Allergies and Special Care Requirements -->
+            <div class="form-group full-width">
+              <label for="allergiesSpecialReqs">Allergies, Scalp Conditions or Special Care Requirements</label>
+              <textarea id="allergiesSpecialReqs" rows="3" placeholder="e.g. Sensitive scalp, allergy to certain synthetic fibers, tender-headed, alopecia patches to cover, eczema, preferred edge control products..."></textarea>
+              <small class="field-hint">Leelah takes hair health very seriously and will adjust techniques to keep you comfortable.</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- STEP 4: DATE & TIME SELECTION (WITH AUTO BUFFER) -->
+        <!-- ============================================== -->
+        <div class="wizard-step-panel" id="stepPanel4">
+          <div class="step-intro">
+            <h3>Step 4: Select Appointment Date &amp; Time</h3>
+            <p>Our real-time calendar checks Leelah's availability, prevents double bookings, and factors in a 30-minute sanitize &amp; buffer window between clients.</p>
+          </div>
+
+          <div class="calendar-booking-grid">
+            <!-- Left: Interactive Calendar Widget -->
+            <div class="calendar-widget">
+              <div class="calendar-controls">
+                <button type="button" class="cal-nav-btn" onclick="navigateMonth(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <h4 id="calendarMonthLabel">Month 2026</h4>
+                <button type="button" class="cal-nav-btn" onclick="navigateMonth(1)"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+
+              <!-- Day of week headers -->
+              <div class="calendar-weekdays">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+              </div>
+
+              <!-- Days grid populated by JS -->
+              <div class="calendar-days-grid" id="calendarDaysGrid">
+                <!-- Injected by renderCalendar() -->
+              </div>
+
+              <div class="calendar-legend">
+                <span class="legend-item"><span class="legend-dot available"></span> Available</span>
+                <span class="legend-item"><span class="legend-dot selected"></span> Selected</span>
+                <span class="legend-item"><span class="legend-dot unavailable"></span> Closed / Off</span>
+                <span class="legend-item"><span class="legend-dot fully-booked"></span> Fully Booked</span>
+              </div>
+            </div>
+
+            <!-- Right: Available Time Slots -->
+            <div class="time-slots-card">
+              <div class="slots-header">
+                <span class="slots-for-label">Available Slots for:</span>
+                <strong id="selectedDateDisplay">Please pick a date first</strong>
+              </div>
+
+              <div class="slots-list" id="slotsList">
+                <div class="no-date-selected">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <p>Click any green or available date on the calendar to view start times.</p>
+                </div>
+              </div>
+
+              <!-- Buffer notification -->
+              <div class="buffer-note">
+                <i class="fa-solid fa-shield-virus"></i>
+                <span>Every appointment automatically reserves a 30-min preparation &amp; studio sanitization buffer.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- STEP 5: BOOKING POLICIES AND SALON AGREEMENT -->
+        <!-- ============================================== -->
+        <div class="wizard-step-panel" id="stepPanel5">
+          <div class="step-intro">
+            <h3>Step 5: Salon Policies &amp; Agreement</h3>
+            <p>Please review and accept our studio policies prior to paying your deposit. Transparency guarantees the best experience for every client.</p>
+          </div>
+
+          <div class="policy-accordion-box">
+            <!-- Policy 1: Deposit & Refund -->
+            <div class="policy-item">
+              <div class="policy-item-header">
+                <div class="p-title-wrap">
+                  <i class="fa-solid fa-receipt policy-icon"></i>
+                  <strong>Deposit &amp; Refund Policy</strong>
+                </div>
+                <span class="badge-tag">Essential</span>
+              </div>
+              <p>A non-refundable 30% deposit is required for all appointments to reserve Leelah's time and protect the booking slot against cancellations.</p>
+            </div>
+
+            <!-- Policy 2: 48-Hour Cancellation Notice -->
+            <div class="policy-item">
+              <div class="policy-item-header">
+                <div class="p-title-wrap">
+                  <i class="fa-regular fa-clock policy-icon"></i>
+                  <strong>Cancellation &amp; Notice Period</strong>
+                </div>
+                <span class="badge-tag">48h Notice</span>
+              </div>
+              <p>If you need to cancel your appointment, please give at least <strong>48 hours notice</strong>. Cancellations within 48 hours will forfeit the deposit.</p>
+            </div>
+
+            <!-- Policy 3: Rescheduling & Transferability -->
+            <div class="policy-item">
+              <div class="policy-item-header">
+                <div class="p-title-wrap">
+                  <i class="fa-solid fa-arrows-rotate policy-icon"></i>
+                  <strong>Rescheduling &amp; Transferability</strong>
+                </div>
+                <span class="badge-tag">1-Time Transfer</span>
+              </div>
+              <p>Your deposit is transferable <strong>one time</strong> to a new date within 30 days, provided you give at least 48 hours notice. Rescheduling with less than 48 hours requires a new deposit.</p>
+            </div>
+
+            <!-- Policy 4: Late Arrival Policy -->
+            <div class="policy-item">
+              <div class="policy-item-header">
+                <div class="p-title-wrap">
+                  <i class="fa-solid fa-person-walking-dashed-line-arrow-right policy-icon"></i>
+                  <strong>Late Arrival Policy</strong>
+                </div>
+                <span class="badge-tag">15 Min Grace</span>
+              </div>
+              <p>We provide a 15-minute grace period. At 15 minutes late, a $15 late fee will be added. After 20 minutes, your appointment may be cancelled to avoid disrupting subsequent clients, and your deposit is forfeited.</p>
+            </div>
+
+            <!-- Policy 5: No-Show Policy -->
+            <div class="policy-item">
+              <div class="policy-item-header">
+                <div class="p-title-wrap">
+                  <i class="fa-solid fa-user-xmark policy-icon"></i>
+                  <strong>No-Show Policy</strong>
+                </div>
+                <span class="badge-tag">Strict</span>
+              </div>
+              <p>Failure to arrive without notification will result in full forfeiture of your deposit and restriction from future online bookings.</p>
+            </div>
+
+            <!-- Policy 6: Stylist Cancellation Guarantee -->
+            <div class="policy-item highlight-guarantee">
+              <div class="policy-item-header">
+                <div class="p-title-wrap">
+                  <i class="fa-solid fa-hand-holding-heart policy-icon"></i>
+                  <strong>What Happens If the Stylist Needs to Cancel?</strong>
+                </div>
+                <span class="badge-tag safe">100% Guaranteed</span>
+              </div>
+              <p>In the rare event that Leelah has an emergency or must cancel your appointment, you will receive an immediate <strong>100% full refund</strong> of your deposit, or priority rescheduling plus a $20 courtesy credit on your service.</p>
+            </div>
+          </div>
+
+          <!-- Policy Agreement Checkbox -->
+          <div class="policy-agreement-card">
+            <label class="agreement-checkbox-label">
+              <input type="checkbox" id="policyAgreementCheckbox">
+              <span class="checkmark-custom"></span>
+              <span class="agreement-text">
+                <strong>I have read, understood, and agree to Hair By Leelah's Booking &amp; Cancellation Policies.</strong>
+                <small>I understand that the 30% deposit is non-refundable and secures my appointment slot.</small>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- STEP 6: DEPOSIT PAYMENT -->
+        <!-- ============================================== -->
+        <div class="wizard-step-panel" id="stepPanel6">
+          <div class="step-intro">
+            <h3>Step 6: Pay Deposit to Confirm</h3>
+            <p>Your deposit verifies your appointment and holds your reserved slot. Complete your payment securely below.</p>
+          </div>
+
+          <div class="payment-layout">
+            <!-- Left: Order Summary Breakdown -->
+            <div class="payment-summary-card">
+              <h4>Appointment Summary</h4>
+              
+              <div class="summary-breakdown-row">
+                <span>Client Name:</span>
+                <strong id="paySummaryClient">-</strong>
+              </div>
+              <div class="summary-breakdown-row">
+                <span>Service Selected:</span>
+                <strong id="paySummaryService">-</strong>
+              </div>
+              <div class="summary-breakdown-row">
+                <span>Customization:</span>
+                <span id="paySummaryDetails" class="text-right text-muted">-</span>
+              </div>
+              <div class="summary-breakdown-row">
+                <span>Appointment Date:</span>
+                <strong id="paySummaryDate">-</strong>
+              </div>
+              <div class="summary-breakdown-row">
+                <span>Time Slot:</span>
+                <strong id="paySummaryTime">-</strong>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <!-- Price breakdown -->
+              <div class="summary-cost-line">
+                <span>Total Service Price:</span>
+                <strong id="payTotalAmount">$180.00</strong>
+              </div>
+              <div class="summary-cost-line highlight-deposit">
+                <span>Deposit Due Now (30%):</span>
+                <strong id="payDepositAmount">$54.00</strong>
+              </div>
+              <div class="summary-cost-line balance-line">
+                <span>Remaining Balance on Arrival:</span>
+                <strong id="payBalanceAmount">$126.00</strong>
+              </div>
+
+              <div class="payment-notes">
+                <i class="fa-solid fa-info-circle"></i>
+                <small>Remaining balance ($126.00) is paid in-salon after styling via Cash, Interac e-Transfer, Debit, or Credit.</small>
+              </div>
+            </div>
+
+            <!-- Right: Simulated Secure Card Checkout -->
+            <div class="payment-form-card">
+              <div class="pay-card-header">
+                <div class="security-lock">
+                  <i class="fa-solid fa-lock"></i>
+                  <span>256-Bit SSL Encrypted Checkout</span>
+                </div>
+                <div class="card-brands">
+                  <i class="fa-brands fa-cc-visa"></i>
+                  <i class="fa-brands fa-cc-mastercard"></i>
+                  <i class="fa-brands fa-cc-amex"></i>
+                  <i class="fa-brands fa-apple-pay"></i>
+                </div>
+              </div>
+
+              <!-- Quick Express Pay simulated buttons -->
+              <div class="express-checkout-row">
+                <button type="button" class="btn-express btn-apple" onclick="simulateExpressPay('Apple Pay')">
+                  <i class="fa-brands fa-apple"></i> Pay with Apple Pay
+                </button>
+                <button type="button" class="btn-express btn-google" onclick="simulateExpressPay('Google Pay')">
+                  <i class="fa-brands fa-google"></i> GPay
+                </button>
+              </div>
+
+              <div class="pay-separator"><span>Or pay with Credit / Debit card</span></div>
+
+              <form id="paymentForm" onsubmit="handlePaymentSubmit(event)">
+                <div class="form-group">
+                  <label for="cardholderName">Cardholder Name <span class="required">*</span></label>
+                  <input type="text" id="cardholderName" placeholder="Name as displayed on card" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="cardNumber">Card Number <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <input type="text" id="cardNumber" placeholder="4500 &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; 1234" maxlength="19" required oninput="formatCardNumber(this)">
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="cardExpiry">Expiration (MM/YY) <span class="required">*</span></label>
+                    <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" required oninput="formatExpiry(this)">
+                  </div>
+                  <div class="form-group">
+                    <label for="cardCvc">CVC / CVV <span class="required">*</span></label>
+                    <input type="text" id="cardCvc" placeholder="123" maxlength="4" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="cardPostal">Postal / ZIP Code <span class="required">*</span></label>
+                  <input type="text" id="cardPostal" placeholder="M1B 2W4" maxlength="7" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-pay-now" id="paySubmitBtn">
+                  <i class="fa-solid fa-lock"></i>
+                  <span>Pay Deposit (<span id="payBtnDepositLabel">$54.00</span>)</span>
+                </button>
+
+                <p class="pay-disclaimer text-center">
+                  <i class="fa-solid fa-circle-check text-success"></i> Instant payment verification. No hidden transaction fees.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- STEP 7: BOOKING CONFIRMATION & RECEIPT -->
+        <!-- ============================================== -->
+        <div class="wizard-step-panel" id="stepPanel7">
+          <div class="confirmation-success-card">
+            <div class="success-badge-animation">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h3>Appointment Confirmed!</h3>
+            <p class="success-sub">Thank you for booking with Hair By Leelah. Your deposit has been verified and your appointment slot is secured.</p>
+            
+            <div class="ref-number-badge">
+              <span>Booking Reference Number</span>
+              <strong id="confirmRefNumber">HBL-2026-8942</strong>
+            </div>
+
+            <!-- Receipt Breakdown -->
+            <div class="receipt-box" id="printableReceipt">
+              <div class="receipt-header">
+                <div class="receipt-brand">
+                  <h4>Hair By Leelah</h4>
+                  <small>Scarborough Luxury Hair Studio</small>
+                </div>
+                <div class="receipt-status-pill">PAID DEPOSIT</div>
+              </div>
+
+              <div class="receipt-grid">
+                <div class="r-item">
+                  <span class="r-label">Client Name:</span>
+                  <strong class="r-val" id="confirmClientName">-</strong>
+                </div>
+                <div class="r-item">
+                  <span class="r-label">Contact:</span>
+                  <strong class="r-val" id="confirmClientContact">-</strong>
+                </div>
+                <div class="r-item">
+                  <span class="r-label">Hairstyle / Service:</span>
+                  <strong class="r-val" id="confirmService">-</strong>
+                </div>
+                <div class="r-item">
+                  <span class="r-label">Custom Specifications:</span>
+                  <strong class="r-val" id="confirmCustomDetails">-</strong>
+                </div>
+                <div class="r-item">
+                  <span class="r-label">Date &amp; Time:</span>
+                  <strong class="r-val text-primary" id="confirmDateTime">-</strong>
+                </div>
+                <div class="r-item">
+                  <span class="r-label">Studio Address:</span>
+                  <strong class="r-val" id="confirmAddress">2250 Markham Rd, Suite 204, Scarborough, ON</strong>
+                </div>
+              </div>
+
+              <div class="receipt-financials">
+                <div class="fin-row">
+                  <span>Total Service Price:</span>
+                  <span id="confirmTotalCost">$180.00</span>
+                </div>
+                <div class="fin-row paid-row">
+                  <span><i class="fa-solid fa-check-circle"></i> Deposit Paid (Verified):</span>
+                  <strong id="confirmDepositPaid">$54.00</strong>
+                </div>
+                <div class="fin-row balance-row">
+                  <span>Remaining Balance Due on Arrival:</span>
+                  <strong id="confirmBalanceDue">$126.00</strong>
+                </div>
+              </div>
+
+              <div class="receipt-policy-notice">
+                <strong><i class="fa-solid fa-bell"></i> Cancellation Reminder:</strong>
+                <p>Cancellations or one-time rescheduling must be requested at least 48 hours prior to your scheduled time. Please arrive with clean, product-free, blow-dried hair (unless wash add-on was selected).</p>
+              </div>
+            </div>
+
+            <!-- Confirmation Action Triggers -->
+            <div class="confirmation-actions-grid">
+              <button class="btn btn-secondary" onclick="simulateSendEmail()">
+                <i class="fa-solid fa-paper-plane"></i> Send Email Confirmation
+              </button>
+              <button class="btn btn-secondary" onclick="simulateSendSMS()">
+                <i class="fa-solid fa-comment-sms"></i> Send SMS Confirmation
+              </button>
+              <button class="btn btn-outline" onclick="downloadCalendarInvite()">
+                <i class="fa-solid fa-calendar-arrow-down"></i> Add to Calendar (.ics)
+              </button>
+              <button class="btn btn-outline" onclick="window.print()">
+                <i class="fa-solid fa-print"></i> Print Receipt
+              </button>
+            </div>
+
+            <div class="text-center done-btn-wrap">
+              <button class="btn btn-primary btn-lg" onclick="finishBookingFlow()">
+                <i class="fa-solid fa-house"></i> Done &amp; Return Home
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Wizard Navigation Footer (Steps 1 to 6) -->
+      <div class="wizard-footer" id="wizardFooter">
+        <button type="button" class="btn btn-outline" id="wizardBackBtn" onclick="prevStep()">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+
+        <div class="wizard-footer-right">
+          <button type="button" class="btn btn-primary" id="wizardNextBtn" onclick="nextStep()">
+            <span>Continue</span> <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MODAL 2: STYLIST PORTAL & SCHEDULE CONTROLS (STORED IN LOCALSTORAGE) -->
+  <!-- ================================================================= -->
+  <div class="modal-backdrop" id="stylistModal" aria-hidden="true" role="dialog" aria-labelledby="stylistModalTitle">
+    <div class="stylist-portal-modal">
+      <div class="modal-header">
+        <div class="stylist-title-wrap">
+          <i class="fa-solid fa-crown modal-crown"></i>
+          <div>
+            <h2 id="stylistModalTitle">Stylist Portal &amp; Management</h2>
+            <small>Hair By Leelah &bull; Local Storage Offline Database</small>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeStylistPortal()" aria-label="Close Stylist Portal">&times;</button>
+      </div>
+
+      <div class="stylist-tabs">
+        <button class="stylist-tab-btn active" data-tab="bookingsTab" onclick="switchStylistTab('bookingsTab')">
+          <i class="fa-solid fa-calendar-check"></i> Booked Appointments (<span id="stylistBookingCount">0</span>)
+        </button>
+        <button class="stylist-tab-btn" data-tab="hoursTab" onclick="switchStylistTab('hoursTab')">
+          <i class="fa-solid fa-clock"></i> Working Days &amp; Hours
+        </button>
+        <button class="stylist-tab-btn" data-tab="holidaysTab" onclick="switchStylistTab('holidaysTab')">
+          <i class="fa-solid fa-calendar-xmark"></i> Block Holidays &amp; Off-Days
+        </button>
+        <button class="stylist-tab-btn" data-tab="settingsTab" onclick="switchStylistTab('settingsTab')">
+          <i class="fa-solid fa-gears"></i> Buffer &amp; Salon Settings
+        </button>
+      </div>
+
+      <div class="stylist-body">
+        
+        <!-- Tab 1: Booked Appointments Table & Management -->
+        <div class="stylist-tab-content active" id="bookingsTab">
+          <div class="stylist-toolbar">
+            <div class="search-input-wrap">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="bookingSearchInput" placeholder="Search by client name, reference code, phone..." oninput="filterStylistBookings()">
+            </div>
+            <div class="toolbar-actions">
+              <button class="btn btn-outline btn-sm" onclick="exportBookingsCSV()">
+                <i class="fa-solid fa-file-csv"></i> Export CSV
+              </button>
+              <button class="btn btn-secondary btn-sm" onclick="populateSampleBookings()">
+                <i class="fa-solid fa-wand-magic"></i> Load Sample Bookings
+              </button>
+            </div>
+          </div>
+
+          <div class="bookings-table-wrap">
+            <table class="stylist-table">
+              <thead>
+                <tr>
+                  <th>Ref #</th>
+                  <th>Client</th>
+                  <th>Hairstyle &amp; Details</th>
+                  <th>Date &amp; Time</th>
+                  <th>Deposit / Balance</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="stylistBookingsTableBody">
+                <!-- Dynamically populated from localStorage -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: Working Days & Hours -->
+        <div class="stylist-tab-content" id="hoursTab">
+          <div class="tab-intro">
+            <h4>Configure Working Days &amp; Salon Hours</h4>
+            <p>Toggle which days clients can book and define opening and closing times.</p>
+          </div>
+
+          <form id="stylistHoursForm" onsubmit="saveStylistHours(event)">
+            <div class="hours-config-list" id="stylistDaysConfigList">
+              <!-- Dynamically populated -->
+            </div>
+            <div class="form-save-bar">
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-floppy-disk"></i> Save Working Hours
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tab 3: Block Off Holidays & Personal Days -->
+        <div class="stylist-tab-content" id="holidaysTab">
+          <div class="tab-intro">
+            <h4>Block Off Holidays, Vacations &amp; Personal Days</h4>
+            <p>Dates listed here will automatically be grayed out and unavailable for client booking.</p>
+          </div>
+
+          <div class="holiday-add-row">
+            <div class="form-group">
+              <label for="blockDateInput">Select Date to Block</label>
+              <input type="date" id="blockDateInput">
+            </div>
+            <div class="form-group flex-grow">
+              <label for="blockReasonInput">Reason (e.g. Holiday, Training, Personal Day)</label>
+              <input type="text" id="blockReasonInput" placeholder="e.g. Personal Holiday">
+            </div>
+            <button type="button" class="btn btn-secondary" onclick="addBlockedDate()">
+              <i class="fa-solid fa-plus"></i> Block Date
+            </button>
+          </div>
+
+          <div class="blocked-dates-list-card">
+            <h5>Currently Blocked Dates:</h5>
+            <ul class="blocked-dates-ul" id="blockedDatesList">
+              <!-- Populated by JS -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tab 4: Buffer Time & General Settings -->
+        <div class="stylist-tab-content" id="settingsTab">
+          <div class="tab-intro">
+            <h4>Salon Safety Buffer &amp; Booking Settings</h4>
+            <p>Customize cleaning time between appointments and deposit percentage.</p>
+          </div>
+
+          <form id="stylistSettingsForm" onsubmit="saveStylistSettings(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="prepBufferSelect">Preparation &amp; Sanitizing Time Between Appointments</label>
+                <select id="prepBufferSelect">
+                  <option value="15">15 Minutes</option>
+                  <option value="30" selected>30 Minutes (Recommended)</option>
+                  <option value="45">45 Minutes</option>
+                  <option value="60">60 Minutes</option>
+                </select>
+                <small class="field-hint">Added automatically after each booking before the next slot opens.</small>
+              </div>
+
+              <div class="form-group">
+                <label for="depositPercentSelect">Required Deposit Percentage</label>
+                <select id="depositPercentSelect">
+                  <option value="20">20% Deposit</option>
+                  <option value="25">25% Deposit</option>
+                  <option value="30" selected>30% Deposit (Standard)</option>
+                  <option value="50">50% Deposit</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="stylistAddressInput">Studio Address Shown on Confirmation</label>
+                <input type="text" id="stylistAddressInput" value="2250 Markham Road, Suite 204, Scarborough, ON M1B 2W4">
+              </div>
+            </div>
+
+            <div class="danger-zone-card">
+              <h5><i class="fa-solid fa-triangle-exclamation"></i> Storage Management</h5>
+              <p>All data is safely saved in your browser's local storage. You can clear test data if needed.</p>
+              <button type="button" class="btn btn-danger btn-sm" onclick="clearAllDemoData()">
+                <i class="fa-solid fa-trash"></i> Reset All Stored Bookings &amp; Settings
+              </button>
+            </div>
+
+            <div class="form-save-bar">
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-floppy-disk"></i> Save Settings
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MODAL 3: WRITE A REVIEW MODAL (SAVED TO LOCALSTORAGE) -->
+  <!-- ================================================================= -->
+  <div class="modal-backdrop" id="reviewModal" aria-hidden="true" role="dialog">
+    <div class="standard-modal">
+      <div class="modal-header">
+        <h3>Write a Review for Leelah</h3>
+        <button class="modal-close-btn" onclick="closeReviewModal()">&times;</button>
+      </div>
+      <form id="newReviewForm" onsubmit="handleReviewSubmit(event)">
+        <div class="modal-body form-grid">
+          <div class="form-group full-width">
+            <label for="revClientName">Your Name <span class="required">*</span></label>
+            <input type="text" id="revClientName" placeholder="e.g. Tasha K." required>
+          </div>
+          <div class="form-group full-width">
+            <label for="revService">Hairstyle Received</label>
+            <input type="text" id="revService" placeholder="e.g. Medium Waist-Length Knotless Braids" required>
+          </div>
+          <div class="form-group full-width">
+            <label>Your Rating <span class="required">*</span></label>
+            <div class="star-rating-select" id="starRatingSelect">
+              <i class="fa-solid fa-star star-pick active" data-rating="1"></i>
+              <i class="fa-solid fa-star star-pick active" data-rating="2"></i>
+              <i class="fa-solid fa-star star-pick active" data-rating="3"></i>
+              <i class="fa-solid fa-star star-pick active" data-rating="4"></i>
+              <i class="fa-solid fa-star star-pick active" data-rating="5"></i>
+            </div>
+            <input type="hidden" id="revRatingVal" value="5">
+          </div>
+          <div class="form-group full-width">
+            <label for="revComment">Your Testimonial <span class="required">*</span></label>
+            <textarea id="revComment" rows="4" placeholder="How was your experience with Leelah? Scalp comfort, neatness, atmosphere..." required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" onclick="closeReviewModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Submit Review
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MODAL 4: SALON POLICIES FULL MODAL -->
+  <!-- ================================================================= -->
+  <div class="modal-backdrop" id="policyModal" aria-hidden="true" role="dialog">
+    <div class="standard-modal modal-lg">
+      <div class="modal-header">
+        <h3>Hair By Leelah &bull; Studio Policies &amp; Agreement</h3>
+        <button class="modal-close-btn" onclick="closePolicyModal()">&times;</button>
+      </div>
+      <div class="modal-body policy-full-body">
+        <h4>1. Deposit &amp; Payment</h4>
+        <p>A non-refundable 30% deposit is required to confirm every appointment. The remaining balance (70%) is due immediately upon completion of your hair service via Cash, Interac e-Transfer, Debit, or Credit card.</p>
+        
+        <h4>2. Cancellations &amp; Notice Period</h4>
+        <p>We respect your time and ask that you respect ours. Please provide at least <strong>48 hours notice</strong> for any cancellations. Cancellations with less than 48 hours notice will forfeit the deposit.</p>
+
+        <h4>3. Rescheduling Policy</h4>
+        <p>Deposits are transferable <strong>one time</strong> to a new date within 30 days of the original appointment, provided notice is given at least 48 hours in advance. Less than 48 hours notice requires a new deposit.</p>
+
+        <h4>4. Late Arrivals &amp; No-Shows</h4>
+        <p>There is a 15-minute grace period. At 15 minutes past your start time, a $15 late fee will be charged. At 20 minutes late, your appointment will be cancelled to protect the schedule of subsequent clients, and your deposit is non-refundable. No-shows forfeit deposit and will not be permitted to rebook.</p>
+
+        <h4>5. Hair Preparation</h4>
+        <p>Please come with your hair washed, thoroughly detangled, blown out straight, and free of heavy oils or butters (unless you select our Wash &amp; Blowdry Add-On).</p>
+
+        <h4>6. Stylist Cancellation Guarantee</h4>
+        <p>In the event of an unavoidable emergency on our end, your deposit is 100% refunded or transferred with an additional $20 courtesy credit.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="closePolicyModal()">I Understand</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MODAL 5: IMAGE LIGHTBOX / PREVIEW -->
+  <!-- ================================================================= -->
+  <div class="modal-backdrop lightbox-backdrop" id="lightboxModal" aria-hidden="true" onclick="closeLightbox(event)">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <img id="lightboxImg" src="" alt="Enlarged hairstyle preview">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
+
